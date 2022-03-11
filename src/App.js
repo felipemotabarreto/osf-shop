@@ -1,22 +1,18 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Header from "./components/Header";
+import ProductCard from "./components/ProductCard";
+import BagImage from "./assets/images/mochila.jpg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Teste de edição.</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <ProductCard
+        name="Produto teste"
+        description="Descrição do produto teste"
+        price="R$ 10,00"
+        image={BagImage}
+      />
+    </>
   );
 }
 
